@@ -7,6 +7,7 @@ this is the code challenge for front and back end development, in this code chal
   - Display such results to the user so that user can click in a person and gather more data
   - Consume People, Films, and Starships information in SWAPI depending on person that user clicked on Front End
   - Display such results in the main screen
+  - Any additional testing and/our UI improvement (State manager, loading screen and event handling) will be considered
 
 # Documentation for 3rd Party API
 
