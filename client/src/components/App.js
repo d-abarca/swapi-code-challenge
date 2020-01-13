@@ -56,7 +56,7 @@ class App extends Component {
       <div className="App">
         <h1>Star Wars API Challenge</h1>
         <div className='container'>
-          <div className='top-right-corner'>
+          <div className='top-left-corner'>
             <TokenComponent onTokenChange={this.onTokenChange}/>
           </div>
           <div className='col'>
