@@ -1,0 +1,34 @@
+{
+  "name": "swapi-code-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:local": "cross-env concurrently \"npm run server:local\" \"npm run client:local\"",
+    "server:local": "cross-env NODE_ENV=local nodemon index.js --ignore ./client/*",
+    "client:local": "cd client && cross-env REACT_APP_ENV=local npm run start:local"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^2.0.2"
+  }
+}
